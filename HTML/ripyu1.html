@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/all.css">
+    <link rel="stylesheet" href="/CSS/index.css">
+    <script src="/JS/index.js"></script>
+    <title>Review Produk</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            border-radius: 10px;
+            max-width: 1000px;
+            margin: 100px auto;
+            margin-left: 29%;
+            margin-right: 20%;
+            background-color: #292929;
+            padding: 40px;
+        }
+
+        h1, h2, p {
+            color: #fff;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .review {
+            margin-top: 20px;
+        }
+
+        .review p {
+            line-height: 1.6;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<style>
+    html, body, h1, h2, h3, h4, h5, h6 {
+        font-family: "Helvetica", sans-serif;
+    }
+    
+    .sidebar {
+        z-index: 3;
+        width: 250px;
+        top: 43px;
+        bottom: 0;
+        height: inherit;
+    }
+</style>
+
+<body>
+    <!-- Navbar -->
+    <div class="top">
+        <div class="bar theme top left-align large">
+        <a class="bar-item button right hide-large hover-white large theme-l1" href="javascript:void(0)" onclick="openn()"><i class="fa-solid fa-bars"></i></a>
+        <a href="/HTML/index.html" class="bar-item button theme-l1" id="logo">B E B A S</a>
+        <a href="/HTML/football.html" class="bar-item button hide-small hover-white">FOOTBALL</a>
+        <a href="/HTML/nba.html" class="bar-item button hide-small hover-white">NBA</a>
+        <a href="/HTML/badminton.html" class="bar-item button hide-small hover-white">BADMINTON</a>
+        <a href="/HTML/formula1.html" class="bar-item button hide-small hover-white">FORMULA 1</a>
+        <div class="bar-item button hide-small hide-medium hover-white">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="SEARCH..">
+        </div>
+        <div class="bar-item button hide-small hide-medium hover-white" onclick="toggleDarkMode()">
+            <i id="dark-mode-icon" class="fa-solid fa-solid fa-circle-half-stroke"></i>
+        </div>
+        </div>
+    </div>
+    
+    <!-- Sidebar -->
+    <nav class="sidebar bar-block collapse large theme-l5 animate-left" id="mySidebar">
+        <a href="javascript:void(0)" onclick="closee()" class="right xlarge padding-large hover-black hide-large" title="Close Menu">
+        <i class="fa fa-remove"></i>
+        </a>
+        <a class="bar-item button hover-black" href="/HTML/index.html">HOME</a>
+        <a class="bar-item button hover-black" href="/HTML/Frame Produk.html">MERCH</a>
+        <a class="bar-item button hover-black" href="/HTML/news.html">NEWS</a>
+        <a class="bar-item button hover-black" href="/HTML/fixtures.html">FIXTURES</a>
+        <a class="bar-item button hover-black" href="/HTML/Gallery.html">GALLERY</a>
+        <a class="bar-item button hover-black" href="#myFooter">ABOUT US</a>
+        <a class="bar-item button hover-black" href="/HTML/login - 1.html">ACCOUNT</a>
+    </nav>
+
+    <div class="container">
+        <h1>Sport Hoodie "Arsy" Navy Colour</h1>
+        <br>
+        <img src="/Image/foto-review/2.jpg" alt="Produk">
+
+        <div class="review">
+            <h2>⭐⭐⭐⭐⭐ (15 review)</h2>
+            <p>Provides a fashionable and warm look Perfect for quick transitions in triathlons and provides additional protection while exercising.</p>
+        </div>
+    </div>
+</body>
+</html>

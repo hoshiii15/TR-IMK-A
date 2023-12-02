@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BEBAS - BADMINTON</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/CSS/index.css">
+  <script src="/JS/index.js"></script>
+  <link rel="stylesheet" href="/CSS/all.css">
+  <script src="https://kit.fontawesome.com/ff8466c949.js" crossorigin="anonymous"></script>
+</head>
+<style>
+  html, body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Helvetica", sans-serif;
+    scroll-behavior: smooth
+  }
+  
+  .sidebar {
+    z-index: 3;
+    width: 250px;
+    top: 43px;
+    bottom: 0;
+    height: inherit;
+  }
+  </style>
+<body>
+
+<!-- Navbar -->
+<div class="top">
+  <div class="bar theme top left-align large">
+    <a class="bar-item button right hide-large hover-white large theme-l1" href="javascript:void(0)" onclick="openn()"><i class="fa-solid fa-bars"></i></a>
+    <a href="/HTML/index.html" class="bar-item button theme-l1" id="logo">B E B A S</a>
+    <a href="/HTML/football.html" class="bar-item button hide-small hover-white">FOOTBALL</a>
+    <a href="/HTML/nba.html" class="bar-item button hide-small hover-white">NBA</a>
+    <a href="/HTML/badminton.html" class="bar-item button hide-small hover-white">BADMINTON</a>
+    <a href="/HTML/formula1.html" class="bar-item button hide-small hover-white">FORMULA 1</a>
+    <div class="bar-item button hide-small hide-medium hover-white">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" placeholder="SEARCH..">
+  </div>
+  <div class="bar-item button hide-small hide-medium hover-white" onclick="toggleDarkMode()">
+      <i id="dark-mode-icon" class="fa-solid fa-solid fa-circle-half-stroke"></i>
+  </div>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="sidebar bar-block collapse large theme-l5 animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closee()" class="right xlarge padding-large hover-black hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <a class="bar-item button hover-black" href="/HTML/index.html">HOME</a>
+  <a class="bar-item button hover-black" href="/HTML/Frame Produk.html">MERCH</a>
+  <a class="bar-item button hover-black" href="/HTML/news.html">NEWS</a>
+  <a class="bar-item button hover-black" href="/HTML/fixtures.html">FIXTURES</a>
+  <a class="bar-item button hover-black" href="/HTML/Gallery.html">GALLERY</a>
+  <a class="bar-item button hover-black" href="#myFooter">ABOUT US</a>
+  <a class="bar-item button hover-black" href="/HTML/login - 1.html">ACCOUNT</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="overlay hide-large" onclick="closee()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="main-section" style="margin-left:250px">
+  <!-- badminton section -->
+  <div class="row padding-top-64">
+    <div class="twothird container">
+      <h3><b>BADMINTON</b></h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="twothird container">
+      <h1 class="text-teal">Sinisuka Gintingggg</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
+        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div class="third container">
+      <p class="border padding-large padding-96 center">NEWS IMAGE</p>
+    </div>
+  </div>
+  <div class="row padding-12">
+    <div class="twothird container">
+      <h1 class="text-teal">Alien Asal Denmark Terlalu OP</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
+        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div class="third container">
+      <p class="border padding-large padding-96 center">NEWS IMAGE</p>
+    </div>
+    <div class="row padding-12">
+      <div class="twothird container">
+        <h1 class="text-teal">Gloria Emmanuella Widjaja Bebankah?</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
+          dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <div class="third container">
+        <p class="border padding-large padding-96 center">NEWS IMAGE</p>
+      </div>
+    </div>
+
+    <footer id="myFooter">
+      <div class="container theme-l1 padding-top-32">
+        <h2>SCORE BIG, SHOP SMART, PLAY HARD.</h2>
+      </div>
+      <div class="container theme-l1">
+        <h4>Cornelius Yoga - 672022204</h4>
+        <p>YNTKTS | Hanya seorang manusia biasa</p>
+      </div>
+      <div class="container theme-l1">
+        <h4>Hosea Raka - 672022160</h4>
+        <p>Gaada moto hidup | Seputaran Mahasiswa UKSW</p>
+      </div>
+      <div class="container theme-l1">
+        <h4>Joaquim Pulitzer - 672022248</h4>
+        <p>Rendre Grâce et Amour | Efesus 4:5 udah itu aja</p>
+      </div>
+    </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+  // Get the Sidebar
+  var mySidebar = document.getElementById("mySidebar");
+
+  // Get the DIV with overlay effect
+  var overlayBg = document.getElementById("myOverlay");
+
+  // Toggle between showing and hiding the sidebar, and add overlay effect
+  function openn() {
+    if (mySidebar.style.display === 'block') {
+      mySidebar.style.display = 'none';
+      overlayBg.style.display = "none";
+    } else {
+      mySidebar.style.display = 'block';
+      overlayBg.style.display = "block";
+    }
+  }
+
+  // Close the sidebar with the close button
+  function closee() {
+    mySidebar.style.display = "none";
+    overlayBg.style.display = "none";
+  }
+</script>
+
+</body>
+</html>

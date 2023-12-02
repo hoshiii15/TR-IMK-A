@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BEBAS - Score Big, Shop Smart, Play Hard.</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/CSS/index.css">
+  <script src="/JS/index.js"></script>
+  <link rel="stylesheet" href="/CSS/all.css">
+  <script src="https://kit.fontawesome.com/ff8466c949.js" crossorigin="anonymous"></script>
+</head>
+<style>
+  html, body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Helvetica", sans-serif;
+    scroll-behavior: smooth
+  }
+  
+  .sidebar {
+    z-index: 3;
+    width: 250px;
+    top: 43px;
+    bottom: 0;
+    height: inherit;
+  }
+</style>
+
+<body>
+<!-- Navbar -->
+<div class="top">
+  <div class="bar theme top left-align large">
+    <a class="bar-item button right hide-large hover-white large theme-l1" href="javascript:void(0)" onclick="openn()"><i class="fa-solid fa-bars"></i></a>
+    <a href="/HTML/index.html" class="bar-item button theme-l1" id="logo">B E B A S</a>
+    <a href="/HTML/football.html" class="bar-item button hide-small hover-white">FOOTBALL</a>
+    <a href="/HTML/nba.html" class="bar-item button hide-small hover-white">NBA</a>
+    <a href="/HTML/badminton.html" class="bar-item button hide-small hover-white">BADMINTON</a>
+    <a href="/HTML/formula1.html" class="bar-item button hide-small hover-white">FORMULA 1</a>
+    <div class="bar-item button hide-small hide-medium hover-white">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" placeholder="SEARCH..">
+  </div>
+  <div class="bar-item button hide-small hide-medium hover-white" onclick="toggleDarkMode()">
+      <i id="dark-mode-icon" class="fa-solid fa-solid fa-circle-half-stroke"></i>
+  </div>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="sidebar bar-block collapse large theme-l5 animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closee()" class="right xlarge padding-large hover-black hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <a class="bar-item button hover-black" href="/HTML/index.html">HOME</a>
+  <a class="bar-item button hover-black" href="/HTML/Frame Produk.html">MERCH</a>
+  <a class="bar-item button hover-black" href="/HTML/news.html">NEWS</a>
+  <a class="bar-item button hover-black" href="/HTML/fixtures.html">FIXTURES</a>
+  <a class="bar-item button hover-black" href="/HTML/Gallery.html">GALLERY</a>
+  <a class="bar-item button hover-black" href="#myFooter">ABOUT US</a>
+  <a class="bar-item button hover-black" href="/HTML/login - 1.html">ACCOUNT</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="overlay hide-large" onclick="closee()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: geser kanan 250px supaya ga ketutupan sidebar -->
+<div class="main-section" style="margin-left:250px">
+  <div class="row padding-top-64">
+    <div class="twothird container">
+      <h3><b><i>SCORE BIG, SHOP SMART, PLAY HARD.</i></b></h3>
+    </div>
+  </div>
+
+  <!-- Recent Fixtures -->
+  <a href="/HTML/fixtures.html">
+    <div class="header-content">
+      <h5>RECENT FIXTURES</h5>
+    </div>
+    <div class="content-section">  
+      <div class="container-fixture">
+        <div class="team">
+            <span class="subheader-content">LALIGA EA SPORT</span>
+        </div>
+        <div class="team">
+            <span class="team-name">Real Madrid CF</span>
+            <span class="score">2</span>
+        </div>
+        <div class="team">
+            <span class="team-name">FC Barcelona</span>
+            <span class="score">1</span>
+        </div>
+      </div>
+  
+      <div class="container-fixture">
+        <div class="team">
+            <span class="subheader-content">FORMULA 1</span>
+        </div>
+        <div class="team">
+            <span class="team-name">Max Verstappen</span>
+            <span class="score">1st</span>
+        </div>
+        <div class="team">
+            <span class="team-name">Abu Dhabi GP</span>
+            <span class="score">1:33:067</span>
+        </div>
+      </div>
+      
+      <div class="container-fixture">
+        <div class="team">
+            <span class="subheader-content">NBA</span>
+        </div>
+        <div class="team">
+            <span class="team-name">Golden State Warriors</span>
+            <span class="score">120</span>
+        </div>
+        <div class="team">
+            <span class="team-name">LA Clippers</span>
+            <span class="score">114</span>
+        </div>
+      </div>
+  
+      <div class="container-fixture">
+        <div class="team">
+            <span class="subheader-content">KOREA MASTERS</span>
+        </div>
+        <div class="team">
+            <span class="team-name">R. Hidayat/K. Sukamuljo</span>
+            <span class="score">21 17</span>
+        </div>
+        <div class="team">
+            <span class="team-name">D. Ki/Y. Jin</span>
+            <span class="score">18 11</span>
+        </div>
+      </div>
+  
+      <div class="container-fixture">
+        <div class="team">
+            <span class="subheader-content">UCL</span>
+        </div>
+        <div class="team">
+            <span class="team-name">Real Madrid CF</span>
+            <span class="score">4</span>
+        </div>
+        <div class="team">
+            <span class="team-name">S.S.C. Napoli</span>
+            <span class="score">2</span>
+        </div>
+      </div>
+  
+      <div class="container-fixture">
+        <div class="team">
+            <span class="subheader-content">LALIGA EA SPORT</span>
+        </div>
+        <div class="team">
+            <span class="team-name">Real Madrid CF</span>
+            <span class="score">2</span>
+        </div>
+        <div class="team">
+            <span class="team-name">FC Barcelona</span>
+            <span class="score">1</span>
+        </div>
+      </div>
+    </div>
+  </a>
+  <br>
+
+  <div class="row">
+    <div class="twothird container">
+      <a href="/HTML/dummy.html">
+        <h1 class="text-teal">Bagaimana Nasib Jojo Lawan Alien Bulutangkis?</h1>
+        <p>Dalam pertandingan epik yang mengguncang dunia bulutangkis, Jojo, sang bintang bulutangkis nasional, berhadapan dengan tantangan luar biasa dari seorang alien misterius yang memasuki lapangan
+          dengan raket di tangan. Sebuah pertemuan yang di luar dugaan ini terjadi ketika Viktor Axelsen, juara dunia bulutangkis, diduga membawa tamu dari luar angkasa untuk melawan Jojo dalam sebuah
+          pertandingan tanpa batas. Pertanyaan besar menggantung: Apakah Jojo akan dapat mengalahkan lawannya yang tidak berasal dari bumi ini? Ataukah alien tersebut akan membawa kejutan yang luar
+          biasa di dunia bulutangkis? Saksikan momen luar biasa ini yang akan merubah sejarah bulutangkis untuk selamanya!</p>
+      </a>
+    </div>
+    <div class="third container">
+      <a href="/HTML/dummy.html">
+        <image class="border" src="/Image/jojoVsAxelsen.jpg" width="100%" alt="Jojo VS Axelsen"></image>
+      </a>
+    </div>
+  </div>
+  <br>
+
+  <div class="row">
+    <div class="twothird container">
+      <a href="/HTML/dummy.html">
+        <h1 class="text-teal">Si "GOAT" Hamilton Masih Kuat Menyaingi Verstappen</h1>
+        <p>Dalam persaingan sengit antara Lewis Hamilton dan Max Verstappen di ajang Formula 1, seakan tak ada habisnya drama dan ketegangan. Terbukti, "GOAT" Hamilton masih mampu memberikan perlawanan
+          sengit dan mempertanyakan dominasi Verstappen. Kedua pembalap elit ini terus memperlihatkan performa luar biasa, menciptakan pertarungan tak terduga di lintasan. Meski Verstappen memuncaki
+          klasemen sementara, kehebatan Hamilton tetap mengintimidasi, mengundang pertanyaan apakah sang veteran ini masih mampu memimpin balapan dan meraih gelar juara. Apakah Hamilton akan berhasil
+          mengejar ketertinggalan dan menggeser Verstappen dari posisi puncak?</p>
+      </a>
+    </div>
+    <div class="third container">
+      <a href="/HTML/dummy.html">
+        <image class="border" src="/Image/hamiltonVsVerstappen.jpeg" width="100%" alt="Hamilton VS Verstappen"></image>
+      </a>
+    </div>
+  </div>
+  <br>
+  
+  <div class="row">
+    <div class="twothird container">
+      <a href="/HTML/dummy.html">
+        <h1 class="text-teal">Messi Puasa Gol, Waktunya Istirahat</h1>
+        <p>Dalam perkembangan terkini dunia sepakbola, Lionel Messi tampaknya menghadapi tantangan yang cukup besar, yaitu periode tanpa mencetak gol dalam beberapa pertandingan terakhirnya.
+          Ketidakmampuan sang bintang untuk menyarangkan bola ke gawang lawan telah menimbulkan spekulasi tentang nasib karirnya. Meskipun Messi telah lama menjadi ikon Barcelona dan Paris Saint-Germain,
+          dan yang terbaru di Inter Miami, kegagalan mencetak gol dalam beberapa pertandingan terakhirnya menimbulkan pertanyaan apakah ini adalah sinyal bahwa masa depannya di lapangan hijau akan segera
+          berakhir. Dengan begitu banyak pencapaian di belakangnya, apalagi belum lama menyabet Ballon D'or yang ke-8. Apakah Messi akan memilih untuk mengakhiri karirnya sebagai pemain atau mungkin
+          mencari tantangan baru di luar lapangan?</p>
+      </a>
+      </div>
+      <div class="third container">
+        <a href="/HTML/dummy.html">
+          <image class="border" src="/Image/messi.jpg" width="100%" alt="Lionel Messi"></image>
+        </a>
+      </div>
+  </div>
+  <br>
+  
+  <div class="row">
+    <div class="twothird container">
+      <a href="/HTML/dummy.html">
+        <h1 class="text-teal">Gaji Pemain Timnas Basket Indonesia Marques Bolden Capai Puluhan Miliar usai Dikontrak Tim NBA</h1>
+        <p>Kabar mengejutkan datang dari dunia basket Indonesia, di mana Marques Bolden, salah satu pemain andalan Timnas Basket Indonesia, dikabarkan menerima kontrak menggiurkan dari tim NBA. Gaji yang
+          akan diterima Bolden disebut-sebut mencapai puluhan miliar rupiah, membuka babak baru dalam sejarah penghargaan finansial bagi pemain basket Indonesia. Kehadiran Bolden di NBA tidak hanya menjadi
+          kebanggaan bagi negeri, tetapi juga memicu pertanyaan seputar dampak positif yang mungkin timbul dalam pengembangan basket tanah air.</p>
+      </a>
+    </div>
+    <div class="third container">
+      <a href="/HTML/dummy.html">
+        <image class="border" src="/Image/marquesBolden.jpg" width="100%" alt="Marques Bolden"></image>
+      </a>
+    </div>
+  </div>
+  <br>
+
+  <div class="row">
+    <div class="twothird container">
+      <a href="/HTML/dummy.html">
+        <h1 class="text-teal">Hasil Japan Masters: Tampil Impresif, Kevin/Rahmat ke 16 Besar</h1>
+        <p>Dalam penampilan mengesankan di ajang Japan Masters, pasangan ganda Indonesia, Kevin Sanjaya Sukamuljo/Rahmat Hidayat, berhasil melangkah ke babak 16 besar dengan penuh determinasi. Keduanya
+          menunjukkan performa yang luar biasa, mengatasi tantangan dengan kekompakan dan kecepatan yang memukau. Prestasi gemilang ini membuat mereka layak untuk mendapat sorotan lebih lanjut dalam
+          turnamen ini.</p>
+      </a>
+    </div>
+    <div class="third container">
+      <a href="/HTML/dummy.html">
+        <image class="border" src="/Image/kevinRahmat.jpeg" width="100%" alt="Kevin Sanjaya/Rahmat Hidayat"></image>
+      </a>
+    </div>
+  </div>
+  <br>
+
+  <div class="row">
+    <div class="twothird container">
+      <a href="/HTML/dummy.html">
+        <h1 class="text-teal">Hasil F1 GP Abu Dhabi 2023: Verstappen Menangi Balapan Terakhir</h1>
+        <p>Dalam persaingan sengit antara Lewis Hamilton dan Max Verstappen di ajang Formula 1, seakan tak ada habisnya drama dan ketegangan. Terbukti, "GOAT" Hamilton masih mampu memberikan perlawanan
+          sengit dan mempertanyakan dominasi Verstappen. Kedua pembalap elit ini terus memperlihatkan performa luar biasa, menciptakan pertarungan tak terduga di lintasan. Meski Verstappen memuncaki
+          klasemen sementara, kehebatan Hamilton tetap mengintimidasi, mengundang pertanyaan apakah sang veteran ini masih mampu memimpin balapan dan meraih gelar juara. Apakah Hamilton akan berhasil
+          mengejar ketertinggalan dan menggeser Verstappen dari posisi puncak?</p>
+      </a>
+    </div>
+    <div class="third container">
+      <a href="/HTML/dummy.html">
+        <image class="border" src="#" width="100%" alt="Hamilton VS Verstappen"></image>
+      </a>
+    </div>
+  </div>
+  <br>
+  
+  <footer id="myFooter">
+    <div class="container theme-l1 padding-top-32">
+      <h2>SCORE BIG, SHOP SMART, PLAY HARD.</h2>
+    </div>
+    <div class="container theme-l1">
+      <h4>Cornelius Yoga - 672022204</h4>
+      <p>YNTKTS | Hanya seorang manusia biasa</p>
+    </div>
+    <div class="container theme-l1">
+      <h4>Hosea Raka - 672022160</h4>
+      <p>Gaada moto hidup | Seputaran Mahasiswa UKSW</p>
+    </div>
+    <div class="container theme-l1">
+      <h4>Joaquim Pulitzer - 672022248</h4>
+      <p>Rendre Grâce et Amour | Efesus 4:5 udah itu aja</p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+  // Get the Sidebar
+  var mySidebar = document.getElementById("mySidebar");
+
+  // Get the DIV with overlay effect
+  var overlayBg = document.getElementById("myOverlay");
+
+  // Toggle between showing and hiding the sidebar, and add overlay effect
+  function openn() {
+    if (mySidebar.style.display === 'block') {
+      mySidebar.style.display = 'none';
+      overlayBg.style.display = "none";
+    } else {
+      mySidebar.style.display = 'block';
+      overlayBg.style.display = "block";
+    }
+  }
+
+  // Close the sidebar with the close button
+  function closee() {
+    mySidebar.style.display = "none";
+    overlayBg.style.display = "none";
+  }
+</script>
+
+</body>
+</html>

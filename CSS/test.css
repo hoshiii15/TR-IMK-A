@@ -1,0 +1,145 @@
+:root
+{
+    --background-color: #fff;
+    --identity-color: #000027;
+}
+
+body
+{
+    background-color: var(--background-color);
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100 vh;
+    width: 100%;
+    margin: 0 px;
+    padding: auto;
+    font-family: "helvetica",sans-serif;
+}
+
+h1,h4,p,span
+{
+    font-family: "helvetica",sans-serif;
+    color: var(--identity-color);
+}
+
+*
+{
+    box-sizing: border-box;
+    scrollbar-color: transparent transparent;
+    scrollbar-width: 0px;
+}
+
+*
+{
+    box-sizing: border-box;
+    scrollbar-color: transparent transparent;
+    scrollbar-width: 0px;
+}
+  
+*::-webkit-scrollbar
+{
+    width: 0;
+}
+  
+*::-webkit-scrollbar-track
+{
+    background: transparent;
+}
+  
+*::-webkit-scrollbar-thumb
+{
+    background: transparent;
+    border: none;
+}
+  
+*
+{
+    -ms-overflow-style: none;
+}
+a
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+.header
+{
+    display: flex;
+    justify-content: space-between; /* Menempatkan left-section dan right-section di sisi kiri dan kanan */
+    align-items: center; /* Menengahkan middle-section secara vertikal */
+    width: 100%;
+    background-color: var(--identity-color);
+    color: #fff;
+    padding: 10px;
+}
+
+.left-section,
+.middle-section,
+.right-section {
+    display: flex;
+    align-items: center;
+}
+
+.middle-section {
+    padding: 1rem;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center; /* Menengahkan elemen-elemen dalam middle-section secara horizontal */
+}
+
+.middle-section a {
+    margin: 0 10px; /* Memberikan ruang antara elemen-elemen dalam middle-section */
+}
+
+.right-section {
+    padding: 1rem; /* Sesuaikan padding sesuai kebutuhan */
+}
+
+#subheader-left-section
+{
+    font-weight: 900;
+    font-size: 20pt;
+}
+
+
+.content-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header-content {
+    width: 100%;
+    text-align: left;
+    margin: 0px 0px 0px 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #333;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px; /* Memberikan margin antara kontainer */
+}
+
+.team {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.team-name {
+    font-weight: bold;
+}
+
+.score {
+    font-size: 20px;
+    margin-left: 50px;
+}
+
